@@ -192,13 +192,14 @@ nav{
     border-bottom: 1.2px solid #DCDADA;
     width: 100%;
     background-color: white;
-    z-index: 10px;
+    z-index: 10;
 }
 .larger-flex{
     margin-left: 10%;
 }
 .select{
-    margin-left: 22px;
+    margin-left: 15px;
+    width: 78%;
 }
 .select a button{
     height: 25px;
@@ -222,30 +223,30 @@ nav{
 }
 #prev-slide{
     position: absolute;
-	top: 15%;
-	right:20.5%;
+	top: 0;
+	right:18%;
 	/* z-index: 10; */
     cursor: pointer;
-    padding: 0 7px;
-    border-radius:50%;
+    padding: 6.5px 15px;
+    border: 0px solid white;
 }
 #prev-slide:hover{
-    border: 2px solid #DCDADA;
-    background-color: #DCDADA;
+    /* border: 0px solid white; */
+    background-color: white;
     color: black;
 }
 #next-slide{
     position: absolute;
-	top: 15%;
-	left: 0;
+	top: 0;
+    right: 98%;
 	/* z-index: 10; */
     cursor: pointer;
-    padding: 0 7px;
-    border-radius:50%;
+    padding: 6.5px 15px;
+    border: 0px solid white;
 }
 #next-slide:hover{
-    border: 2px solid #DCDADA;
-    background-color: #DCDADA;
+    /* border: 2px solid white; */
+    background-color: white;
     color: black;
 }
 .list-container{

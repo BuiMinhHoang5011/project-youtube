@@ -8,3 +8,15 @@ menuIcon.onclick = function(){
     list.classList.toggle("lager-list");
     list_one.classList.toggle("larger-flex");
 }
+
+// ----------------------- SHOW MORE-------------------------
+
+function toggle(){
+    var x = document.getElementById("showmore");
+    if(x.style.display === "none"){
+        x.style.display = "block";
+    }
+    else{
+        x.style.display = "none";
+    }
+}

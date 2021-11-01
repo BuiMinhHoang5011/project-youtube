@@ -46,8 +46,12 @@
             <a href=""><img src="image/history (2).png"><p>History</p></a>
             <a href=""><img src="image/library (2).png"><p>Your Video</p></a>
             <a href=""><img src="image/watch.png"><p>Watch Later</p></a>
-           <!-- <a href=""><img src="image/cameron.png" class="more" alt=""></a> -->
-            <a href="" class="more-icon"><img src="image/showmore.png"><p>Show More</p></a>
+            <a href=""><img src="image/like.png"><p>Like Videos</p></a>
+            <div id="showmore">
+                <a href=""><img src="image/listmore.png" alt=""><p>My Musics</p></a>
+                <a href=""><img src="image/listmore.png" alt=""><p>Watch Later</p></a>
+            </div>
+            <button onclick="toggle()"><img src="image/showmore.png"><p>Show More</p></button>
             <hr>
         </div>
         <div class="subscribed-list">
@@ -101,8 +105,7 @@
                 <img src="image/unnamed.jpg">
                 <div class="vid-info">
                     <a href="">FAPtv Cơm Nguội : Tập 253 - Công Chúa Bánh Tráng</a>
-                    <img src="image/checkmark.png" class="tick1">
-                    <p>FAP TV</p>
+                    <div class="checkmark"><p>FAP TV</p><img src="image/checkmark.png" class="tick1"></div>
                     <p>4.8M views &bull; 6 days ago</p>               
                 </div>
             </div>
@@ -115,8 +118,7 @@
                 <img src="image/channels4_profile.jpg">
                 <div class="vid-info">
                     <a href="">Lan Ngọc tức giận tại nhà giam đòi "đuổi" Trư...</a>
-                    <img src="image/checkmark.png">
-                    <p>Running Man Việt Nam</p>
+                    <div class="checkmark"><p>Running Man Việt Nam</p><img src="image/checkmark.png" class="tick6"></div>
                     <p>29k views &bull; 2 weeks ago</p>
                 </div>
             </div>
@@ -129,8 +131,7 @@
                 <img src="image/unnamed (2).jpg">
                 <div class="vid-info">
                     <a href="">RAP VIỆT Mùa 2 2021 - Tập 1 | Trấn Thành, Touliver,...</a>
-                    <img src="image/checkmark.png" class="tick2">
-                    <p>Vie Channel - HTV2</p>
+                    <div class="checkmark"><p>Vie Channel - HTV2</p><img src="image/checkmark.png" class="tick2"></div>
                     <p>11M views &bull; 1 week ago</p>               
                 </div>
             </div>
@@ -143,7 +144,7 @@
                 <img src="image/unnamed (1).jpg">
                 <div class="vid-info">
                     <a href="">JUUN D - Mình Xa Mình Yêu (Audio)</a>
-                    <img src="image/checkmark.png" class="tick3">
+                    <div class="checkmark"><p>JUUN D</p><img src="image/checkmark.png" class="tick3"></div>
                     <p>JUUN D</p>
                     <p>2.8M views &bull; 3 years ago</p>               
                 </div>
@@ -170,8 +171,7 @@
                 <img src="image/unnamed (3).jpg">
                 <div class="vid-info">
                     <a href="">I WILL NEVER SLEEP AGAIN! (giant spiders)...</a>
-                    <img src="image/checkmark.png" class="tick4">
-                    <p>HappyCairek</p>
+                    <div class="checkmark"><p>HappyCairek</p><img src="image/checkmark.png" class="tick4"></div>
                     <p>29k views &bull; 3 years ago</p>               
                 </div>
             </div>
@@ -197,8 +197,7 @@
                 <img src="image/unnamed.jpg">
                 <div class="vid-info">
                     <a href="">Love? Eh Later - Episode 1 - Movie School | Hi Team...</a>
-                    <img src="image/checkmark.png" class="tick1">
-                    <p>FAP TV</p>
+                    <div class="checkmark"><p>FAP TV</p><img src="image/checkmark.png" class="tick1"></div>
                     <p>16M views &bull; 2 years hours</p>               
                 </div>
             </div>
@@ -223,8 +222,7 @@
                 <img src="image/unnamed (6).jpg">
                 <div class="vid-info">
                     <a href="">7 Nụ Cười Xuân Mùa 2 | Tập 10 Full HD: Trường Giang Say</a>
-                    <img src="image/checkmark.png" class="tick5">
-                    <p>ĐÔNG TÂY PROMOTION OFFICIAL</p>
+                    <div class="checkmark"><p>ĐÔNG TÂY PROMOTION OFFICIAL</p><img src="image/checkmark.png" class="tick5"></div>
                     <p>11M views &bull; 3 years ago</p>               
                 </div>
             </div>
@@ -256,8 +254,8 @@
   dots: false,
   infinite: true,
   speed: 300,
-  prevArrow:'#prev-slide',
-  nextArrow:'#next-slide',
+  prevArrow:'#next-slide',
+  nextArrow:'#prev-slide',
   slidesToShow: 7,
 //   centerMode: true,
   variableWidth: true
